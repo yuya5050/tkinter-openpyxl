@@ -45,7 +45,7 @@ def submit_name():
     
 def select_action():
     root.title(f"動作を選択({name})")
-    button1=tk.Button(root, text="TANOMO", command=tanomo_action)
+    button1=tk.Button(root, text="hello world", command=tanomo_action)
     button1.pack(pady=10)
     button2=tk.Button(root, text="サンプル使用", command=sample_action)
     button2.pack(pady=10)
@@ -175,7 +175,7 @@ def file_parse():
         move_list = []
         
         for data in all_list:
-            if data["H"] == 'TANOMO（オアゾ店のみ）':
+            if data["H"] == 'hello world':
                 tanomo_list.append(data)
             elif data["H"] == 'サンプル使用':
                 sample_list.append(data)
