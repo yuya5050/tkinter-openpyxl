@@ -45,7 +45,7 @@ def submit_name():
     
 def select_action():
     root.title(f"動作を選択({name})")
-    button1=tk.Button(root, text="hello world", command=tanomo_action)
+    button1=tk.Button(root, text="hello world", command=hello_action)
     button1.pack(pady=10)
     button2=tk.Button(root, text="サンプル使用", command=sample_action)
     button2.pack(pady=10)
@@ -61,7 +61,7 @@ global last_list
 last_list = []
 
 
-def tanomo_action():
+def hello_action():
     global last_list, tanomo_list
     last_list = tanomo_list
     clear_widgets()
